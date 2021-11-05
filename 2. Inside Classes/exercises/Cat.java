@@ -29,6 +29,12 @@ public class Cat {
 		else
 			System.out.println("DEAD CAT :(");
 	}
+	
+	@Override
+	public String toString() {
+		
+		return ("My name is " + name);
+	}
 
 	public static void main(String[] args) {
 		/* Do the following things without changing the Cat class */
@@ -38,6 +44,22 @@ public class Cat {
 		// 2. Get the Cat to print it's name
 
 		// 3. Kill the Cat!
+		
+		Cat garfield = new Cat("Garfield");
+		
+		garfield.meow();
+		garfield.printName();
+		garfield.kill();
+		garfield.kill();
+		garfield.kill();
+		garfield.kill();
+		garfield.kill();
+		garfield.kill();
+		garfield.kill();
+		garfield.kill();
+		garfield.kill();
+		
+		System.out.println(garfield);
 
 	}
 }
